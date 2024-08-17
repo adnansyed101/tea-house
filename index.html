@@ -10,10 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/b718bfba92.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -28,6 +31,50 @@
     </script>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <!-- Main Content -->
+    <main class="max-w-screen-xl px-16 lg:px-28">
+      <!-- Header Section -->
+      <header class="flex pt-10 mb-20 justify-between">
+        <!-- Text Content -->
+        <div>
+          <h1 class="text-5xl md:text-7xl">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <br />
+          <p class="text-gray-500 w-3/4">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <br />
+          <button
+            class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold"
+          >
+            Explore More
+            <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
+          </button>
+        </div>
+        <!-- Image Content -->
+        <div class="relative">
+          <!-- Image -->
+          <div>
+            <img src="images/banner.png" alt="Shakes" class="w-full" />
+          </div>
+          <!-- card -->
+          <div
+            class="flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg absolute top-28 md:top-80 md:left-32 lg:left-28"
+          >
+            <!-- icon -->
+            <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+            <!-- Text -->
+            <div class="ml-2">
+              <h2 class="lg:text-2xl font-bold">5.00</h2>
+              <p class="text-gray-500">Trust Pilot ratings</p>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
   </body>
 </html>
